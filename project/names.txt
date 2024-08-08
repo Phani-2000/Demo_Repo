@@ -5,3 +5,11 @@ git add <filename.ext> - Adds this file to Staging area
 git commit -m "Some Commit Msg" - Commits the files in staging area to local Repo
 git restore --staged <filename.ext> - Removes the file from Staging area
 git restore <file> - To discard changes in working directory
+
+git reset <Hash ID of Commit before the Commit we want to delete> - To unstage the changes made in the commit after this commit ID.
+Eg: Suppose, we made a commit "Added File". After this we made another commit "Deleted File". But we want to remove remove this commit.
+    So, first we do "git log" to get the commit ID for "Added File". Then we use the above cmd to unstage the commit.
+    After this cmd, the changes will be unstaged. We can then use "git resore" to discard changes in the working Dir.
+
+git stash- Allows us to temporarily save (or "stash") changes you've made in your working directory that you don't want to commit immediately 
+
