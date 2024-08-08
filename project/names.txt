@@ -1,0 +1,7 @@
+git init- Initializing Git Repo
+git status- Get the status of files like tracked, untracked,any commits required etc..
+git add . - Add all files in this dir to staging area
+git add <filename.ext> - Adds this file to Staging area
+git commit -m "Some Commit Msg" - Commits the files in staging area to local Repo
+git restore --staged <filename.ext> - Removes the file from Staging area
+git restore <file> - To discard changes in working directory
